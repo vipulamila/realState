@@ -265,7 +265,23 @@ function showToast(icon,text,type){
 }
 
 // =========== SCROLL HELPER ===========
-function navTo(e,sel){if(e&&e.preventDefault)e.preventDefault();var el=document.querySelector(sel);if(el)el.scrollIntoView({behavior:'smooth'});return false;}
+function navTo(e,sel){
+  if(e && e.preventDefault) e.preventDefault();
+  const el = document.querySelector(sel);
+  if(el){
+    const offset = 80;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+  return false;
+}
 
 // =========== MOBILE NAV ===========
 function toggleMobileNav(){

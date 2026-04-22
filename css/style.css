@@ -50,6 +50,7 @@ nav{
   background:linear-gradient(135deg,var(--gold),#fff);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
   background-clip:text;letter-spacing:.5px;
+  text-decoration:none;
 }
 .nav-logo span{font-weight:400;font-style:italic}
 .nav-links{display:flex;gap:2rem;align-items:center}
