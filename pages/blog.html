@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — EstateX Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .page-hero { padding: 120px 5% 60px; text-align: center; }
+  .content-section { position: relative; z-index: 1;  max-width: 800px; margin: 0 auto 100px; padding: 0 5%; line-height: 1.8; color: var(--white-soft); }
+  .content-section h2 { font-family: 'Playfair Display', serif; color: var(--white); margin: 2rem 0 1rem; }
+  .content-section p { margin-bottom: 1.5rem; }
+  .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--gold); text-decoration: none; font-size: 0.9rem; margin-bottom: 2rem; }
+  .post-card { background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; }
+  .post-card .date { font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+  .post-card h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--white); margin-bottom: 0.75rem; }
+  .post-card p { font-size: 0.9rem; color: var(--white-soft); margin-bottom: 1rem; }
+  .read-more { color: var(--white); text-decoration: underline; font-size: 0.85rem; font-weight: 500; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<div class="bg-mesh"></div>
+<div class="bg-stars" id="stars"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><a href="../real-estate-website.html" style="text-decoration:none; color:inherit;">Estate<span>X</span></a></div>
+  <div class="nav-links">
+    <a href="../real-estate-website.html#listings">Properties</a>
+    <a href="../real-estate-website.html#hiw">How It Works</a>
+    <a href="../real-estate-website.html#brokers">Brokers</a>
+    <a href="../real-estate-website.html#contact">Contact</a>
+  </div>
+  <div style="display:flex;gap:.75rem;align-items:center">
+    <button class="nav-btn btn-gold" onclick="window.location.href='../real-estate-website.html'">Home</button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-badge">✦ EstateX Insights</div>
+  <h1 style="font-family:'Playfair Display',serif; font-size: 3.5rem; margin-bottom: 1rem;">Our Blog</h1>
+  <p style="color: var(--white-dim);">Expert advice, market trends, and home inspiration</p>
+</section>
+
+<div class="content-section">
+  <a href="../real-estate-website.html" class="back-link">← Back to Home</a>
+  
+  <div class="post-card">
+    <div class="date">April 22, 2025</div>
+    <h3>Top 5 Emerging Luxury Localities in Mumbai</h3>
+    <p>As the city expands, new pockets of luxury are emerging. From the planned infrastructure of Navi Mumbai to the redevelopment in Worli, discover where the next big investment opportunity lies.</p>
+    <a class="read-more" onclick="showToast('📖','Full article coming soon!','info')">Read Full Article →</a>
+  </div>
+  
+  <div class="post-card">
+    <div class="date">April 15, 2025</div>
+    <h3>How to Stage Your Home for a Fast Sale</h3>
+    <p>First impressions are everything. Learn the secrets of professional home staging—from lighting to minimalist decor—that can increase your property's value by up to 15%.</p>
+    <a class="read-more" onclick="showToast('📖','Full article coming soon!','info')">Read Full Article →</a>
+  </div>
+  
+  <div class="post-card">
+    <div class="date">April 08, 2025</div>
+    <h3>Understanding RERA: A Guide for Home Buyers</h3>
+    <p>Buying a home can be complex. We break down the RERA regulations to help you understand your rights and ensure a safe, transparent transaction with developers.</p>
+    <a class="read-more" onclick="showToast('📖','Full article coming soon!','info')">Read Full Article →</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="display:block;margin-bottom:1rem"><a href="../real-estate-website.html" style="text-decoration:none; color:inherit;">Estate<span>X</span></a></div>
+      <p>India's premium real estate platform. Connecting buyers, sellers, and brokers across 15+ cities.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Properties</h4>
+      <ul>
+        <li><a href="../real-estate-website.html#listings">Buy a Home</a></li>
+        <li><a href="../real-estate-website.html#listings">Rent a Flat</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="help.html">Help Center</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 EstateX. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
